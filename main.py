@@ -15,7 +15,7 @@ class Index(webapp2.RequestHandler):
         ]
 
         # randomly choose one of the movies, and return it
-        randIndex = random.randint(0, (len(movies)-1))
+        randIndex = random.randrange(len(movies))
 
         return movies[randIndex]
 
